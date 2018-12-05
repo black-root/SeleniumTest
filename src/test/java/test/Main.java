@@ -52,10 +52,11 @@ public class Main {
         driver.findElement(By.id("password")).sendKeys("15669");
         pausa(500);
         driver.findElement(By.id("loginbtn")).submit();
-        ///Assert.assertEquals("Área personal", driver.getTitle());
+        //Assert.assertEquals("Área personal", driver.getTitle());
         pausa(500);
         driver.findElement(By.linkText("Programacion III")).click();
-        pausa(10000);
+        //si se incrementa el tiempo dara problemas
+        pausa(9000);
         
                 
         
