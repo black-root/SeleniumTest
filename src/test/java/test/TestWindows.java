@@ -20,7 +20,7 @@ import org.junit.Assert;
  *
  * @author debianyisus
  */
-public class Main {
+public class TestWindows {
 
     /*
     url= https://www.browserstack.com
@@ -38,10 +38,12 @@ public class Main {
     public static void main(String[] args) throws MalformedURLException {
        // Iphone ip = new Iphone(USERNAME, AUTOMATE_KEY, URL);
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("browserName", "iPhone");
-        caps.setCapability("device", "iPhone 8 Plus");
-        caps.setCapability("realMobile", "true");
-        caps.setCapability("os_version", "11.0");
+        caps.setCapability("browser", "Chrome");
+        caps.setCapability("browser_version", "62.0");
+        caps.setCapability("os", "Windows");
+        caps.setCapability("os_version", "10");
+        caps.setCapability("resolution", "1024x768");
+
 
         WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
         driver.get("https://av.occ.ues.edu.sv/");

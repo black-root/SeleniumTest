@@ -20,7 +20,7 @@ import org.junit.Assert;
  *
  * @author debianyisus
  */
-public class Main {
+public class TestiOS {
 
     /*
     url= https://www.browserstack.com
@@ -42,6 +42,7 @@ public class Main {
         caps.setCapability("device", "iPhone 8 Plus");
         caps.setCapability("realMobile", "true");
         caps.setCapability("os_version", "11.0");
+
 
         WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
         driver.get("https://av.occ.ues.edu.sv/");
